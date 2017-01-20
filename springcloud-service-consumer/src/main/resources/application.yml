@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: springcloud-service-consumer
+server:
+  port: 8010
+eureka:
+  client:
+    service-url:
+      defaultZone : http://discovery:8765/eureka
+  instance:
+    prefer-ip-address: true

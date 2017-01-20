@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: springcloud-service-provider
+  jpa:
+    database-platform: H2
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    generate-ddl: true
+  datasource:
+    url: jdbc:h2:file:~/springcloud-wuda-study
+  freemarker:
+    cache: false
+    charset: UTF-8
+    request-context-attribute: request
+
+server:
+  port: 8000
+logging:
+  level:
+    root : INFO
+eureka:
+  client:
+    service-url:
+      defaultZone : http://discovery:8765/eureka
+  instance:
+    prefer-ip-address: true

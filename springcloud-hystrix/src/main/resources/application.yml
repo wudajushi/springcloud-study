@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: spring-hystrix
+eureka:
+  client:
+    service-url:
+      defaultZone: http://discovery:8765/eureka
