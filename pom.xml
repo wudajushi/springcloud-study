@@ -14,6 +14,8 @@
         <module>springcloud-service-consumer-feign</module>
         <module>springcloud-dto</module>
         <module>springcloud-hystrix</module>
+        <module>springcloud-hystrix-dashboard</module>
+        <module>springcloud-zuul</module>
     </modules>
     <packaging>pom</packaging>
     <parent>
